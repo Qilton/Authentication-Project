@@ -6,7 +6,7 @@ const AuthRouter=require('./routes/AuthRouter')
 const ProductRouter=require('./routes/productRouter')
 require('dotenv').config()
 require('./models/db')
-const PORT=process.env.PORT || 8080
+const PORT= 8080
 
 app.get('/',(req,res) => {
   res.send("Hello World")
