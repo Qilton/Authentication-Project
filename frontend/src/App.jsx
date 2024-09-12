@@ -10,7 +10,13 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const PrivateRoute = ({ element }) => {
-    return isAuthenticated ? element : <Navigate to="/login" />
+    return (<>
+    <div>This is a Private route.You need to be Logged in </div>
+    
+    <a href="/login">Login</a><br />
+    <a href="/signup">Signup</a>
+    </>)
+
   }
 
   return (
