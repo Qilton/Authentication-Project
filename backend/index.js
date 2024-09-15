@@ -14,7 +14,9 @@ app.get('/',(req,res) => {
 )
 
 app.use(bodyParser.json())
-app.use(cors())
+app.use(cors(
+  
+))
 app.use('/auth',AuthRouter)
 app.use('/products',ProductRouter)
 
