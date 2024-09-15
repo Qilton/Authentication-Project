@@ -22,7 +22,7 @@ const HandleLogout=(e) => {
 
 const fetchproducts=async () => {
   try {
-    const url="http://localhost:8080/products"
+    const url="https://authentication-project-smoky.vercel.app/products"
     const headers={
       headers:{
       "Authorization": localStorage.getItem('token')}
